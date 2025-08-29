@@ -25,7 +25,7 @@ these buckets be unique for each Kubernetes cluster.
    aws s3api create-bucket \
        --bucket <BUCKET_NAME> \
        --region <AWS_REGION> \
-       --create-bucket-configuration LocationConstraint=<BUCKET_NAME>
+       --create-bucket-configuration LocationConstraint=<AWS_REGION>
    ```
 
    The `us-east-1` region does not support a `LocationConstraint` setting. As such, if your region is `us-east-1`, omit the bucket configuration.
